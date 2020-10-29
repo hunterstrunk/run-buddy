@@ -25,6 +25,14 @@ body {
 .secondary-border {
     border-color: #39a6b2;
 }
+
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
 /*end global styles*/
 
 /*header styles */
@@ -186,3 +194,29 @@ section {
       font-size: 38px;
   }
   /*what you do ends*/
+
+  /*Trainers style*/
+  .trainers {
+      text-align: center;
+  }
+
+  .trainer {
+      width: 900px;
+      margin: 0 auto 30px auto;
+      background: #024e76;
+      color: #fce138;
+      overflow: auto;
+  }
+
+  .trainer img {
+      width: 35%;
+      float: left;
+  }
+  
+  .trainer-bio {
+      padding: 35px;
+      float: left;
+      width: 65%;
+  }
+
+  /*Trainers style ends*/
