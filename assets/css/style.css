@@ -333,24 +333,61 @@ header h1 {
       background: var(--secondary-color);
       color: var(--primary-color);
       flex:1;
+      position: relative;
   }
 
-  .trainer img {
-      width: 100%;
-  }
-  
   .trainer-bio {
-      padding: 25px;
+    padding: 25px;
   }
 
-  .trainer-bio h3 {
-      font-size: 28px;
+  .trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: cover;
   }
 
-  .trainer-bio h4 {
-      font-size: 22px;
-      margin-bottom: 15px;
+  .trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+    background-size: cover;
   }
+
+  .trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+    background-size: cover;
+  }
+
+  .trainer-img h3 {
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 5px;
+    z-index: 9998;
+  }
+
+  .trainer-img h4 {
+    position: relative;
+    font-size: 22px;
+    z-index: 9998;
+  }
+
+  .trainer-img {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+}
+
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 0.8));
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s ;
+}
+
   /*Trainers style ends*/
 
   /*Service plans styles*/
